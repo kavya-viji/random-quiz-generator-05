@@ -160,7 +160,7 @@ function problem054(){
 		{
 		'principal': 5000,
 		'rateOfInterest': 8,
-			'noOfYears': 2
+		'noOfYears': 2
 		},
 		{
 		'principal': 5000,
@@ -216,12 +216,12 @@ function problem055(){
 		{
 		'principal': 48000,
 		'rateOfInterest': 8,
-			'noOfYears': 1
+		'noOfYears': 1
 		},
 		{
 		'principal': 8000,
 		'rateOfInterest': 15,
-			'noOfYears': 2
+		'noOfYears': 2
 		},
 		{
 		'principal': 7500,
@@ -720,6 +720,55 @@ function problem0514(){
 		
 }
 
+
+function problem0515(){
+	var inputData = [{
+		'sellingPrice': 8400,
+		'costPrice': 12
+		},
+		{
+		'sellingPrice': 800,
+		'costPrice': 25
+		},
+		{
+		'sellingPrice': 1925,
+		'costPrice': 25
+		},
+		{
+		'sellingPrice': 198,
+		'costPrice': 32
+		},
+		{
+		'sellingPrice': 625,
+		'costPrice': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sellingPrice= inputData[randomIndex]['sellingPrice'],
+		costPrice = inputData[randomIndex]['costPrice'],
+		profit,
+		question = {};
+
+	sellingPrice=parseInt(sellingPrice);
+	costPrice=parseInt(costPrice);
+	profit= (sellingPrice - costPrice/costPrice)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0515',
+		'question': 'A Shopkeeper sold an article for Rs.'+ sellingPrice + '. If the cost price of the article is Rs.'+ costPrice + ', Find the profit percent ?',
+		'options': {
+			'A': costPrice + parseInt(Math.random()*10),
+			'B': costPrice,
+			'C': costPrice + parseInt(Math.random()*10),
+			'D': costPrice - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '0515'
+	}
+	
+	return question;
+		
+}
 
 
 
