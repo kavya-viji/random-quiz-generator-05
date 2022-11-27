@@ -477,53 +477,6 @@ function problem059(){
 	
 	return question;	
 }
-function problem0510(){
-	var inputData = [{
-		'length': 24,
-		'breadth': 16
-		},
-		{
-		'length': 13,
-		'breadth': 12
-		},
-		{
-		'length': 43,
-		'breadth': 22
-		},
-		{
-		'length': 15,
-		'breadth': 10
-		},
-		{
-		'length': 50,
-		'breadth': 22
-		}],
-		randomIndex = getRandomNumber(inputData.length),
-		length = inputData[randomIndex]['length'],
-		breadth = inputData[randomIndex]['breadth'],
-		perimeter,
-		question = {};
-
-	length = parseInt (length);
-	breadth = parseInt (breadth);
-	perimeter = 2*(length+breadth);
-
-	question = {
-		'type': 'single',
-		'id': '0510',
-		'question': 'Find the Perimeter of the Rectangle with length'+" "+  length +'cm and breadth' +" "+ breadth + 'cm ?',
-		'options': {
-			'A': perimeter + parseInt(Math.random()*10),
-			'B': perimeter - parseInt(Math.random()*10),
-			'C': perimeter,
-			'D': perimeter - parseInt(Math.random()*10)
-		},
-		'answer': 'C',
-		'author-id': '0510'
-	}
-	
-	return question;	
-}
 
 
 
