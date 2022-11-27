@@ -671,6 +671,54 @@ function problem0513(){
 		
 }
 
+function problem0514(){
+	var inputData = [{
+		'downstreamStreamSpeed': 20,
+		'upstreamSpeed': 15
+		},
+		{
+		'downstreamStreamSpeed': 55,
+		'upstreamSpeed': 15
+		},
+		{
+		'downstreamStreamSpeed': 80,
+		'upstreamSpeed': 20
+		},
+		{
+		'downstreamStreamSpeed': 70,
+		'upstreamSpeed': 10
+		},
+		{
+		'downstreamStreamSpeed': 25,
+		'upstreamSpeed': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		downstreamStreamSpeed= inputData[randomIndex]['downstreamStreamSpeed'],
+		upstreamSpeed = inputData[randomIndex]['upstreamSpeed'],
+		stillWaterSpeed,
+		question = {};
+
+	downstreamStreamSpeed=parseInt(downstreamStreamSpeed);
+	upstreamSpeed=parseInt(upstreamSpeed);
+	stillWaterSpeed = 1/2 *(downstreamStreamSpeed + upstreamSpeed);
+
+	question = {
+		'type': 'single',
+		'id': '0514',
+		'question': 'A man rows downstream at' +" "+ downstreamStreamSpeed + 'km/hr and rows upstream at' +" "+ upstreamSpeed + 'km/hr. At what speed he can row in still water ?',
+		'options': {
+			'A': stillWaterSpeed + parseInt(Math.random()*10),
+			'B': stillWaterSpeed - parseInt(Math.random()*10),
+			'C': stillWaterSpeed + parseInt(Math.random()*10),
+			'D': stillWaterSpeed
+		},
+		'answer': 'D',
+		'author-id': '0514'
+	}
+	
+	return question;
+		
+}
 
 
 
