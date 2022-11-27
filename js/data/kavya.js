@@ -50,8 +50,7 @@ function problem051(){
 		'author-id': '051'
 	}
 	
-	return question;
-	
+	return question;	
 }
 
 function problem052(){
@@ -100,8 +99,7 @@ function problem052(){
 	}
 	
 	return question;
-	
-	
+		
 }
 
 function problem053(){
@@ -150,7 +148,92 @@ function problem053(){
 	}
 	
 	return question;
-	
-	
-	
+		
 }
+
+function problem054(){
+	var inputData = [{
+		'principal': 4500,
+		'rateOfInterest': 4,
+		'noOfYears': 6
+		},
+		{
+		'principal': 5000,
+		'rateOfInterest': 8,
+			'noOfYears': 2
+		},
+		{
+		'principal': 5000,
+		'rateOfInterest': 4,
+		'noOfYears': 6
+		},
+		{
+		'principal': 7500,
+		'rateOfInterest': 4,
+		'noOfYears': 6
+		},
+		{
+		'principal': 8000,
+		'rateOfInterest': 4,
+		'noOfYears': 6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal= inputData[randomIndex]['principal'],
+		rateOfInterest = inputData[randomIndex]['rateOfInterest'],
+		noOfYears = inputData[randomIndex]['noOfYears'],
+		simpleInterest,
+		question = {};
+
+	principal=parseInt(principal);
+	rateOfInterest=parseInt(rateOfInterest);
+	noOfYears=parseInt(noOfYears);
+	simpleInterest=(principal*rateOfInterest*noOfYears)/100;
+
+	question = {
+		'type': 'single',
+		'id': '054',
+		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateOfInterest  +'% per annum and Time is' +" "+ + noOfYears+ 'years.',
+		'options': {
+			'A': simpleInterest + parseInt(Math.random()*10),
+			'B': simpleInterest + parseInt(Math.random()*10),
+			'C': simpleInterest,
+			'D': simpleInterest - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '054'
+	}
+	
+	return question;
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
