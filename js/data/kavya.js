@@ -136,7 +136,7 @@ function problem053(){
 	question = {
 		'type': 'single',
 		'id': '053',
-		'question': 'Sam brought cell phone from a shop. If he sells at Rs' +" "+ + sellingPrice +" "+'and earns a profit of'+" "+ + profit  +'%. Find the cost price of the cell phone.',
+		'question': 'Sam brought cell phone from a shop. If he sells at Rs' +" "+ + sellingPrice +" "+'and earns a profit of'+" "+ + profit  +'%. Find the cost price of the cell phone.?',
 		'options': {
 			'A': costPrice + parseInt(Math.random()*10),
 			'B': costPrice,
@@ -192,7 +192,7 @@ function problem054(){
 	question = {
 		'type': 'single',
 		'id': '054',
-		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateOfInterest  +'% per annum and Time is' +" "+ + noOfYears+ 'years.',
+		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateOfInterest  +'% per annum and Time is' +" "+ + noOfYears+ 'years.?',
 		'options': {
 			'A': simpleInterest + parseInt(Math.random()*10),
 			'B': simpleInterest + parseInt(Math.random()*10),
@@ -249,7 +249,7 @@ function problem055(){
 	question = {
 		'type': 'single',
 		'id': '055',
-		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noOfYears  +'years at' +" "+ + rateOfInterest+ '% per annum compounded annually.',
+		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noOfYears  +'years at' +" "+ + rateOfInterest+ '% per annum compounded annually.?',
 		'options': {
 			'A': compoundInterest + parseInt(Math.random()*10),
 			'B': compoundInterest,
@@ -306,7 +306,7 @@ function problem056(){
 	question = {
 		'type': 'single',
 		'id': '056',
-		'question': 'A Boat can travel with a speed of ' +" "+ + boatSpeed +" "+ 'km/hr in still water. If the speed of stream is ' +" "+ + streamSpeed  +'km/hr. Find the time by the boat to go' +" "+ + distance+ 'km downstream',
+		'question': 'A Boat can travel with a speed of ' +" "+ + boatSpeed +" "+ 'km/hr in still water. If the speed of stream is ' +" "+ + streamSpeed  +'km/hr. Find the time by the boat to go' +" "+ + distance+ 'km downstream ?',
 		'options': {
 			'A': time,
 			'B': time + parseInt(Math.random()*10),
@@ -319,6 +319,54 @@ function problem056(){
 	
 	return question;
 		
+}
+
+function problem057(){
+	var inputData = [{
+		'length': 24,
+		'breadth': 16
+		},
+		{
+		'length': 13,
+		'breadth': 12
+		},
+		{
+		'length': 43,
+		'breadth': 22
+		},
+		{
+		'length': 15,
+		'breadth': 10
+		},
+		{
+		'length': 50,
+		'breadth': 23
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		length = inputData[randomIndex]['length'],
+		breadth = inputData[randomIndex]['breadth'],
+		speed,
+		question = {};
+
+	length = parseInt (length);
+	breadth = parseInt (breadth);
+	area = length*breadth;
+
+	question = {
+		'type': 'single',
+		'id': '057',
+		'question': 'Find the Area of Rectangle with length'+" "+ + length + 'cm and breadth' +" "+ + breadth + 'cm ?',
+		'options': {
+			'A': area + parseInt(Math.random()*10),
+			'B': area - parseInt(Math.random()*10),
+			'C': area,
+			'D': area - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '057'
+	}
+	
+	return question;	
 }
 
 
