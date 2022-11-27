@@ -779,7 +779,7 @@ function problem0516(){
 		{
 		'principal': 48000,
 		'rateOfInterest': 8,
-			'noOfYears': 1
+		'noOfYears': 1
 		},
 		{
 		'principal': 8000,
@@ -789,12 +789,12 @@ function problem0516(){
 		{
 		'principal': 7500,
 		'rateOfInterest': 4,
-			'noOfYears': 6
+		'noOfYears': 6
 		},
 		{
 		'principal': 8000,
 		'rateOfInterest': 4,
-			'noOfYears': 6
+		'noOfYears': 6
 		}],
 		randomIndex = getRandomNumber(inputData.length),
 		principal= inputData[randomIndex]['principal'],
@@ -826,6 +826,69 @@ function problem0516(){
 		
 }
 
+function problem0517(){
+	var inputData = [{
+		'length': 40,
+		'breadth': 25,
+		'height': 20,
+		'spaceOccupied': 200
+		},
+		{
+		'length': 50,
+		'breadth': 35,
+		'height': 40,
+		'spaceOccupied': 200
+		},
+		{
+		'length': 70,
+		'breadth': 20,
+		'height': 10,
+		'spaceOccupied': 200
+		},
+		{
+		'length': 80,
+		'breadth': 40,
+		'height': 10,
+		'spaceOccupied': 200
+		},
+		{
+		'length': 80,
+		'breadth': 40,
+		'height': 30,
+		'spaceOccupied': 200	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		length= inputData[randomIndex]['length'],
+		breadth = inputData[randomIndex]['breadth'],
+		height = inputData[randomIndex]['height'],
+		spaceOccupied = inputData[randomIndex]['spaceOccupied'],
+		volume,noOfPerson,
+		question = {};
+
+	length = parseInt(length);
+	breadth = parseInt(breadth);
+	height = parseInt(height);
+	spaceOccupied = parseInt(spaceOccupied);
+	volume = length*breadth*height;
+	noOfPerson = volume/spaceOccupied;
+
+	question = {
+		'type': 'single',
+		'id': '0517',
+		'question': 'The dimensions of a hall are'+" " + length +'m,'+" " + breadth +'m and' +" "+ height + 'm. If each person requires' +" "+ spaceOccupied +" "+ 'cubic metre, then the number of persons who can be accomodated in the hall are ?',
+		'options': {
+			'A': noOfPerson,
+			'B': noOfPerson + parseInt(Math.random()*10),
+			'C': noOfPerson + parseInt(Math.random()*10),
+			'D': noOfPerson - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0517'
+	}
+	
+	return question;
+		
+}
 
 
 
