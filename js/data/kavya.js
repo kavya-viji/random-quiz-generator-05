@@ -890,7 +890,62 @@ function problem0517(){
 		
 }
 
+function problem0518(){
+	var inputData = [{
+		's1': 815,
+		's2': 854,
+		'y1': 3,
+		'y2': 4
+		},
+		{
+		's1': 815,
+		's2': 854,
+		'y1': 8,
+		'y2': 5
+		},
+		{
+		's1': 815,
+		's2': 859,
+		'y1': 5,
+		'y2': 9
+		},
+		{
+		's1': 815,
+		's2': 853,
+		'y1': 8,
+		'y2': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s1= inputData[randomIndex]['s1'],
+		s2= inputData[randomIndex]['s2'],
+		y1= inputData[randomIndex]['y1'],
+		y2= inputData[randomIndex]['y2'],
+		a,
+		b,
+		principal,
+		question = {};
+		
+		a=s2-s1;
+		b=a*y1;
+		principal=s1-b;
 
+	question = {
+		'type': 'single',
+		'id': '0518',
+		'question': 'A sum of money at simple interest amounts to Rs. ' + s1 + ' in ' + y1 + '  years and to Rs.' + s2 + ' in ' + y2 + ' years. The sum is:',
+		'options': {
+			'A': principal, 
+			'B': principal - parseInt(Math.random()*10),
+			'C': principal + parseInt(Math.random()*10),
+			'D': principal - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0518'
+	}
+	
+	return question;
+	
+}
 
 
 
