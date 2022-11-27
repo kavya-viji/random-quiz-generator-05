@@ -264,6 +264,63 @@ function problem055(){
 		
 }
 
+function problem056(){
+	var inputData = [{
+		'boatSpeed': 13,
+		'streamSpeed': 4,
+		'distance': 68
+		},
+		{
+		'boatSpeed': 13,
+		'streamSpeed': 3,
+		'distance': 85
+		},
+		{
+		'boatSpeed': 15,
+		'streamSpeed': 9,
+			'distance': 100
+		},
+		{
+		'boatSpeed': 10,
+		'streamSpeed': 2,
+		'distance': 120
+		},
+		{
+		'boatSpeed': 12,
+		'streamSpeed': 3,
+		'distance': 150
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		boatSpeed= inputData[randomIndex]['boatSpeed'],
+		streamSpeed = inputData[randomIndex]['streamSpeed'],
+		distance = inputData[randomIndex]['distance'],
+		downStreamSpeed,time,
+		question = {};
+
+	boatSpeed = parseInt(boatSpeed);
+	streamSpeed = parseInt(streamSpeed);
+	distance = parseInt(distance);
+	downStreamSpeed = boatSpeed + streamSpeed;
+	time = distance/downStreamSpeed
+
+	question = {
+		'type': 'single',
+		'id': '056',
+		'question': 'A Boat can travel with a speed of ' +" "+ + boatSpeed +" "+ 'km/hr in still water. If the speed of stream is ' +" "+ + streamSpeed  +'km/hr. Find the time by the boat to go' +" "+ + distance+ 'km downstream',
+		'options': {
+			'A': time,
+			'B': time + parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '056'
+	}
+	
+	return question;
+		
+}
+
 
 
 
