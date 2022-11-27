@@ -369,6 +369,54 @@ function problem057(){
 	return question;	
 }
 
+function problem058(){
+	var inputData = [{
+		'sum': 550,
+		'totalNumber': 10
+		},
+		{
+		'sum': 415,
+		'totalNumber': 5
+		},
+		{
+		'sum': 880,
+		'totalNumber': 8
+		},
+		{
+		'sum': 84,
+		'totalNumber': 6
+		},
+		{
+		'sum': 50,
+		'totalNumber': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sum = inputData[randomIndex]['sum'],
+		totalNumber = inputData[randomIndex]['totalNumber'],
+		average,
+		question = {};
+
+	sum = parseInt (sum);
+	totalNumber = parseInt (totalNumber);
+	average = sum/totalNumber;
+
+	question = {
+		'type': 'single',
+		'id': '058',
+		'question': ' The sum of' +" " + totalNumber + " " + 'numbers is' +" " + + sum +'. Find their average number.?',
+		'options': {
+			'A': average + parseInt(Math.random()*10),
+			'B': average - parseInt(Math.random()*10),
+			'C': average - parseInt(Math.random()*10),
+			'D': average 
+		},
+		'answer': 'D',
+		'author-id': '058'
+	}
+	
+	return question;	
+}
+
 
 
 
