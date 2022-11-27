@@ -615,6 +615,62 @@ function problem0512(){
 	return question;	
 }
 
+function problem0513(){
+	var inputData = [{
+		'population': 12600,
+		'rate': 10,
+		'noOfYears': 1
+		},
+		{
+		'population': 1450000,
+		'rate': 10,
+			'noOfYears': 1
+		},
+		{
+		'population': 6250,
+		'rate': 8,
+			'noOfYears': 1
+		},
+		{
+		'population': 26400,
+		'rate': 4,
+			'noOfYears': 1
+		},
+		{
+		'population': 19855,
+		'rate': 5,
+			'noOfYears': 1
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		population= inputData[randomIndex]['population'],
+		rate = inputData[randomIndex]['rate'],
+		noOfYears = inputData[randomIndex]['noOfYears'],
+		presentPopulation,
+		question = {};
+
+	population = parseInt(population);
+	rate = parseInt(rate);
+	noOfYears = parseInt(noOfYears);
+	presentPopulation = population*(1-(rate/100))**noOfYears;
+
+	question = {
+		'type': 'single',
+		'id': '0513',
+		'question': 'The population of a state is decreasing at a rate of' +" "+ rate +'% per annum. If the population'+" "+ noOfYears +" "+ 'year ago was' +" "+ population  +" "+'. what is the present population?',
+		'options': {
+			'A': presentPopulation + parseInt(Math.random()*10),
+			'B': presentPopulation,
+			'C': presentPopulation + parseInt(Math.random()*10),
+			'D': presentPopulation - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '0513'
+	}
+	
+	return question;
+		
+}
+
 
 
 
