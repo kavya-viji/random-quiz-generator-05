@@ -39,7 +39,7 @@ function problem051(){
 	question = {
 		'type': 'single',
 		'id': '051',
-		'question': 'A car travels a distance of' + distance + 'km in' + time + 'hours. What is its speed in km/hr?',
+		'question': 'A car travels a distance of'+" "+ + distance + 'km in'+" "+ + time + 'hours. What is its speed in km/hr?',
 		'options': {
 			'A': speed,
 			'B': speed - parseInt(Math.random()*10),
@@ -54,10 +54,53 @@ function problem051(){
 	
 }
 
-function problem2(){
+function problem052(){
+	var inputData = [{
+		'streamSpeed': 10,
+		'boatSpeed': 25
+		},
+		{
+		'streamSpeed': 5,
+		'boatSpeed': 15
+		},
+		{
+		'streamSpeed': 19,
+		'boatSpeed': 35
+		},
+		{
+		'streamSpeed': 7,
+		'boatSpeed': 10
+		},
+		{
+		'streamSpeed': 2,
+		'boatSpeed': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		streamSpeed= inputData[randomIndex]['streamSpeed'],
+		boatSpeed = inputData[randomIndex]['boatSpeed'],
+		upStream,
+		question = {};
+
+	streamSpeed=parseInt(streamSpeed);
+	boatSpeed=parseInt(boatSpeed);
+	upStream=(boatSpeed - streamSpeed);
+
+	question = {
+		'type': 'single',
+		'id': '052',
+		'question': 'The speed of boat in still water is' +" "+ + boatSpeed + 'kmph. The speed of current is'+" "+ + streamSpeed + 'kmph. What is its Up stream speed in kmph?',
+		'options': {
+			'A': upStream + parseInt(Math.random()*10),
+			'B': upStream - parseInt(Math.random()*10),
+			'C': upStream + parseInt(Math.random()*10),
+			'D': upStream
+		},
+		'answer': 'D',
+		'author-id': '052'
+	}
+	
+	return question;
+	
 	
 }
 
-function problem3(){
-	
-}
