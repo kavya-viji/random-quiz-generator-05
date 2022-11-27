@@ -525,6 +525,54 @@ function problem0510(){
 	return question;	
 }
 
+function problem0511(){
+	var inputData = [{
+		'x': 3000,
+		'y': 2000
+		},
+		{
+		'x': 9000,
+		'y': 3000
+		},
+		{
+		'x': 5000,
+		'y': 2000
+		},
+		{
+		'x': 1500,
+		'y': 1000
+		},
+		{
+		'x': 4000,
+		'y': 1000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		x = inputData[randomIndex]['x'],
+		y = inputData[randomIndex]['y'],
+		z,
+		question = {};
+
+	x = parseInt (x);
+	y = parseInt (y);
+	z = ((x-y)/x)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0511',
+		'question': 'Anu salary is Rs.' +" "+ x +'and Mani salary is Rs.' +" "+ y + '.How much % is Mani salary is less than Anu salary?',
+		'options': {
+			'A': z,
+			'B': z - parseInt(Math.random()*10),
+			'C': z + parseInt(Math.random()*10), 
+			'D': z - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0511'
+	}
+	
+	return question;	
+}
+
 
 
 
