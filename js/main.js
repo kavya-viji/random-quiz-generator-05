@@ -11,7 +11,7 @@ questionBank.push (problem058 ());
 questionBank.push (problem059 ());
 questionBank.push (problem0510 ());
 questionBank.push (problem0511 ());
-
+questionBank.push (problem0512 ());
 
 
 

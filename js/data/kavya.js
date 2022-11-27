@@ -573,6 +573,47 @@ function problem0511(){
 	return question;	
 }
 
+function problem0512(){
+	var inputData = [{
+		'side': 5,
+		},
+		{
+		'side': 4,
+		},
+		{
+		'side': 7,
+		},
+		{
+		'side': 9,
+		},
+		{
+		'side': 2
+			
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		side = inputData[randomIndex]['side'],
+		surfaceArea,
+		question = {};
+
+	side = parseInt (side);
+	surfaceArea = 6*side*side;
+
+	question = {
+		'type': 'single',
+		'id': '0512',
+		'question': 'Find the total surface area of a cube with side' +" "+ side + 'cm?',
+		'options': {
+			'A': surfaceArea - parseInt(Math.random()*10),
+			'B': surfaceArea - parseInt(Math.random()*10),
+			'C': surfaceArea + parseInt(Math.random()*10), 
+			'D': surfaceArea
+		},
+		'answer': 'D',
+		'author-id': '0512'
+	}
+	
+	return question;	
+}
 
 
 
