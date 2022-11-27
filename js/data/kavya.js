@@ -345,7 +345,7 @@ function problem057(){
 		randomIndex = getRandomNumber(inputData.length),
 		length = inputData[randomIndex]['length'],
 		breadth = inputData[randomIndex]['breadth'],
-		speed,
+		area,
 		question = {};
 
 	length = parseInt (length);
@@ -417,7 +417,113 @@ function problem058(){
 	return question;	
 }
 
+function problem059(){
+	var inputData = [{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 10000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 20000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 30000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 40000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 60000,
+		'profit': 18000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		capital1 = inputData[randomIndex]['capital1'],
+		capital2 = inputData[randomIndex]['capital2'],
+		capital3 = inputData[randomIndex]['capital3'],
+		profit = inputData[randomIndex]['profit'],
+		shareA,
+		question = {};
 
+	capital1 = parseInt (capital1);
+	capital2 = parseInt (capital2);
+	capital3 = parseInt (capital3);
+	shareA = (capital1*profit)/(capital1+capital2+capital3);
+
+	question = {
+		'type': 'single',
+		'id': '059',
+		'question': 'A, B and C are partners. They have invested Rs.' + capital1  +" " +',Rs.' + capital2  +" " +'and Rs.' + capital3 +" " + 'respectively for the same period. If the total profit is Rs.' + profit + ', find the share of A ?',
+		'options': {
+			'A': shareA + parseInt(Math.random()*10),
+			'B': shareA,
+			'C': shareA - parseInt(Math.random()*10),
+			'D': shareA - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '059'
+	}
+	
+	return question;	
+}
+function problem0510(){
+	var inputData = [{
+		'length': 24,
+		'breadth': 16
+		},
+		{
+		'length': 13,
+		'breadth': 12
+		},
+		{
+		'length': 43,
+		'breadth': 22
+		},
+		{
+		'length': 15,
+		'breadth': 10
+		},
+		{
+		'length': 50,
+		'breadth': 22
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		length = inputData[randomIndex]['length'],
+		breadth = inputData[randomIndex]['breadth'],
+		perimeter,
+		question = {};
+
+	length = parseInt (length);
+	breadth = parseInt (breadth);
+	perimeter = 2*(length+breadth);
+
+	question = {
+		'type': 'single',
+		'id': '0510',
+		'question': 'Find the Perimeter of the Rectangle with length'+" "+  length +'cm and breadth' +" "+ breadth + 'cm ?',
+		'options': {
+			'A': perimeter + parseInt(Math.random()*10),
+			'B': perimeter - parseInt(Math.random()*10),
+			'C': perimeter,
+			'D': perimeter - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0510'
+	}
+	
+	return question;	
+}
 
 
 

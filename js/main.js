@@ -8,6 +8,10 @@ questionBank.push (problem055 ());
 questionBank.push (problem056 ());
 questionBank.push (problem057 ());
 questionBank.push (problem058 ());
+questionBank.push (problem059 ());
+questionBank.push (problem0510 ());
+
+
 
 
 
