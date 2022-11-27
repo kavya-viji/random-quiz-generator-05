@@ -947,24 +947,50 @@ function problem0518(){
 	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function problem0519(){
+	var inputData = [
+		{
+		'distance':200,
+		'speed': 18
+		},
+		{
+		'distance':100,
+		'speed': 18
+		},
+		{
+		'distance':150,
+		'speed': 17
+		},
+		{
+		'distance':250,
+		'speed': 18
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		distance= inputData[randomIndex]['distance'],
+    	time,
+		question = {};
+		
+	    speed=parseInt(speed*5/18);
+		distance=parseInt(distance);
+		time=(distance/speed);
+		
+	question = {
+		'type': 'single',
+		'id': '0519',
+		'question': 'A jogger is running at a speed of '+ speed +' km/hr. In what time he will cross a track of length '+ distance+' meters?',
+		'options': {
+			'A':  time+parseInt(Math.random()*10),
+			'B':  time-parseInt(Math.random()*10),
+			'C':  time,
+			'D':  time-parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0519'
+	}
+	
+	return question;
+	
+}
 
