@@ -19,21 +19,6 @@ questionBank.push (problem0516 ());
 questionBank.push (problem0517 ());
 questionBank.push (problem0518 ());
 questionBank.push (problem0519 ());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+questionBank.push (problem0520 ());
 
 console.log(questionBank);
