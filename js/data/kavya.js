@@ -104,3 +104,53 @@ function problem052(){
 	
 }
 
+function problem053(){
+	var inputData = [{
+		'sellingPrice': 8400,
+		'profit': 12
+		},
+		{
+		'sellingPrice': 800,
+		'profit': 25
+		},
+		{
+		'sellingPrice': 1925,
+		'profit': 25
+		},
+		{
+		'sellingPrice': 198,
+		'profitprofit': 32
+		},
+		{
+		'sellingPrice': 625,
+		'profit': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sellingPrice= inputData[randomIndex]['sellingPrice'],
+		profit = inputData[randomIndex]['profit'],
+		costPrice,
+		question = {};
+
+	sellingPrice=parseInt(sellingPrice);
+	profit=parseInt(profit);
+	costPrice=(100/(100+profit)*sellingPrice);
+
+	question = {
+		'type': 'single',
+		'id': '053',
+		'question': 'Sam brought cell phone from a shop. If he sells at Rs' +" "+ + sellingPrice +" "+'and earns a profit of'+" "+ + profit  +'%. Find the cost price of the cell phone.',
+		'options': {
+			'A': costPrice + parseInt(Math.random()*10),
+			'B': costPrice,
+			'C': costPrice + parseInt(Math.random()*10),
+			'D': costPrice - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '053'
+	}
+	
+	return question;
+	
+	
+	
+}
