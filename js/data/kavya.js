@@ -624,22 +624,22 @@ function problem0513(){
 		{
 		'population': 1450000,
 		'rate': 10,
-			'noOfYears': 1
+		'noOfYears': 1
 		},
 		{
 		'population': 6250,
 		'rate': 8,
-			'noOfYears': 1
+		'noOfYears': 1
 		},
 		{
 		'population': 26400,
 		'rate': 4,
-			'noOfYears': 1
+		'noOfYears': 1
 		},
 		{
 		'population': 19855,
 		'rate': 5,
-			'noOfYears': 1
+		'noOfYears': 1
 		}],
 		randomIndex = getRandomNumber(inputData.length),
 		population= inputData[randomIndex]['population'],
@@ -770,6 +770,61 @@ function problem0515(){
 		
 }
 
+function problem0516(){
+	var inputData = [{
+		'principal': 12600,
+		'rateOfInterest': 10,
+		'noOfYears': 2
+		},
+		{
+		'principal': 48000,
+		'rateOfInterest': 8,
+			'noOfYears': 1
+		},
+		{
+		'principal': 8000,
+		'rateOfInterest': 15,
+		'noOfYears': 2
+		},
+		{
+		'principal': 7500,
+		'rateOfInterest': 4,
+			'noOfYears': 6
+		},
+		{
+		'principal': 8000,
+		'rateOfInterest': 4,
+			'noOfYears': 6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal= inputData[randomIndex]['principal'],
+		rateOfInterest = inputData[randomIndex]['rateOfInterest'],
+		noOfYears = inputData[randomIndex]['noOfYears'],
+		amount,
+		question = {};
+
+	principal = parseInt(principal);
+	rateOfInterest = parseInt(rateOfInterest);
+	noOfYears = parseInt(noOfYears);
+	amount = principal*(1 + (rateOfInterest*noOfYears)/100);
+
+	question = {
+		'type': 'single',
+		'id': '0516',
+		'question': 'Sona has borrowed a Rs.' + principal +" "+ 'at the rate of' +" "+ rateOfInterest +" "+ '% simple interest. What amount he needs to pay after'+" "+noOfYears+" "+ 'years to clear the debt?',
+		'options': {
+			'A': amount + parseInt(Math.random()*10),
+			'B': amount + parseInt(Math.random()*10),
+			'C': amount,
+			'D': amount - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0516'
+	}
+	
+	return question;
+		
+}
 
 
 
