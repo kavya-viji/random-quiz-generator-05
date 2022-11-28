@@ -47,7 +47,7 @@ function problem051(){
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '05'
+		'author-id': '051'
 	}
 	
 	return question;	
@@ -95,7 +95,7 @@ function problem052(){
 			'D': upStream
 		},
 		'answer': 'D',
-		'author-id': '05'
+		'author-id': '052'
 	}
 	
 	return question;
@@ -144,7 +144,7 @@ function problem053(){
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '05'
+		'author-id': '053'
 	}
 	
 	return question;
@@ -200,7 +200,7 @@ function problem054(){
 			'D': simpleInterest - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '05'
+		'author-id': '054'
 	}
 	
 	return question;
@@ -257,7 +257,7 @@ function problem055(){
 			'D': compoundInterest - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '05'
+		'author-id': '055'
 	}
 	
 	return question;
@@ -314,7 +314,7 @@ function problem056(){
 			'D': time - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '05'
+		'author-id': '056'
 	}
 	
 	return question;
@@ -363,7 +363,7 @@ function problem057(){
 			'D': area - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '05'
+		'author-id': '057'
 	}
 	
 	return question;	
@@ -411,7 +411,7 @@ function problem058(){
 			'D': average 
 		},
 		'answer': 'D',
-		'author-id': '05'
+		'author-id': '058'
 	}
 	
 	return question;	
@@ -472,7 +472,7 @@ function problem059(){
 			'D': shareA - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '05'
+		'author-id': '059'
 	}
 	
 	return question;	
@@ -519,7 +519,7 @@ function problem0510(){
 			'D': perimeter - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '05'
+		'author-id': '0510'
 	}
 	
 	return question;	
@@ -567,7 +567,7 @@ function problem0511(){
 			'D': z - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '05'
+		'author-id': '0511'
 	}
 	
 	return question;	
@@ -609,7 +609,7 @@ function problem0512(){
 			'D': surfaceArea
 		},
 		'answer': 'D',
-		'author-id': '05'
+		'author-id': '0512'
 	}
 	
 	return question;	
@@ -664,7 +664,7 @@ function problem0513(){
 			'D': presentPopulation - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '05'
+		'author-id': '0513'
 	}
 	
 	return question;
@@ -713,7 +713,7 @@ function problem0514(){
 			'D': stillWaterSpeed
 		},
 		'answer': 'D',
-		'author-id': '05'
+		'author-id': '0514'
 	}
 	
 	return question;
@@ -762,7 +762,7 @@ function problem0515(){
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '05'
+		'author-id': '0515'
 	}
 	
 	return question;
@@ -818,7 +818,7 @@ function problem0516(){
 			'D': amount - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '05'
+		'author-id': '0516'
 	}
 	
 	return question;
@@ -882,7 +882,7 @@ function problem0517(){
 			'D': noOfPerson - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '05'
+		'author-id': '0517'
 	}
 	
 	return question;
@@ -939,7 +939,7 @@ function problem0518(){
 			'D': principal - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '05'
+		'author-id': '0518'
 	}
 	
 	return question;
@@ -986,7 +986,7 @@ function problem0519(){
 			'D':  time-parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '05'
+		'author-id': '0519'
 	}
 	
 	return question;
@@ -1000,19 +1000,19 @@ function problem0520(){
 		},
 		{
 		'tankCap': 30,
-			'buckCap': 2/5
+		'buckCap': 2/5
 		},
 		{
 		'tankCap': 40,
-			'buckCap': 2/5
+		'buckCap': 2/5
 		},
 		{
 		'tankCap': 45,
-			'buckCap': 2/5
+		'buckCap': 2/5
 		},
 		{
 		'tankCap': 50,
-			'buckCap': 2/5
+		'buckCap': 2/5
 		}],
 		randomIndex = getRandomNumber(inputData.length),
 	    tankCap= inputData[randomIndex]['tankCap'],
@@ -1035,7 +1035,7 @@ function problem0520(){
 			'D': nBuck - parseFloat(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '05'
+		'author-id': '0520'
     }
 	return question;
 }
